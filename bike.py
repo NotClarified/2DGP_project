@@ -1,9 +1,11 @@
 from pico2d import *
 
 
+# player가 사용하는 기본 chatecter인 Bike이다.
+# Bike의 StateMachine을 받아서 처리 할 수 있어야 된다.
 class Bike:
     def __init__(self):
-        self.x, self.y = 136, 133
+        self.x, self.y = 136, 133 #bike의 x,y Size
         self.frame = 0
         self.action = 6 # 6이 idle상태
         self.dir = 0
@@ -49,3 +51,5 @@ while running:
     delay(1)
 
 close_canvas()
+
+#자전거 함정
